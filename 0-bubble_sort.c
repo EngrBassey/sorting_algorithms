@@ -28,6 +28,9 @@ void bubble_sort(int *array, size_t size)
 	bool bol_val = false;
 	size_t j, arr_len = size;
 
+	if (array == NULL || size < 2)
+		return;
+
 	while (bol_val == false)
 	{
 		bol_val = true;
